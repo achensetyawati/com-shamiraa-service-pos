@@ -1250,7 +1250,7 @@ namespace Com.Shamiraa.Service.Pos.Lib.Services.SalesDocService
         {
             DateTime _dateTo = dateTo == new DateTime(0001, 1, 1) ? DateTime.Now : dateTo;
 
-            SqlConnection conn = new SqlConnection("Server=shamiraa-db-server.database.windows.net,1433;Database=shamiraa-db-pos;User=shamiraaprd;password=shamiraa123.;Trusted_Connection=False;Encrypt=True;MultipleActiveResultSets=true");
+            SqlConnection conn = new SqlConnection("Server=shamiraa-db-server.database.windows.net,1433;Database=shamiraa-db-pos;User=shamiraaprd;password=Mira098.;Trusted_Connection=False;Encrypt=True;MultipleActiveResultSets=true");
 
             conn.Open();
 
@@ -1298,7 +1298,7 @@ namespace Com.Shamiraa.Service.Pos.Lib.Services.SalesDocService
 
             conn.Close();
             var itemcode = "(" + string.Join(",", itemcodes) + ")";
-            SqlConnection connCore = new SqlConnection("Server=shamiraa-db-server.database.windows.net,1433;Database=shamiraa-db-core;User=shamiraaprd;password=shamiraa123.;Trusted_Connection=False;Encrypt=True;MultipleActiveResultSets=true");
+            SqlConnection connCore = new SqlConnection("Server=shamiraa-db-server.database.windows.net,1433;Database=shamiraa-db-core;User=shamiraaprd;password=Mira098.;Trusted_Connection=False;Encrypt=True;MultipleActiveResultSets=true");
 
             string itemQuery = "SELECT Code, ArticleRealizationOrder, CategoryDocName, CollectionDocName,  Name, ColorDocName, " +
                 "CounterDocName, DomesticSale, DomesticCOGS, DomesticRetail, SeasonDocName, Size, StyleDocName, " +
