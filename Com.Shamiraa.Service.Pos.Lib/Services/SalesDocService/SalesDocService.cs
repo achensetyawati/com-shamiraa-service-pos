@@ -1281,7 +1281,7 @@ namespace Com.Shamiraa.Service.Pos.Lib.Services.SalesDocService
                         // var date = Convert.ToDateTime(reader["Date"].ToString());
                         SalesReportViewModel data = new SalesReportViewModel
                         {
-                            Brand = "BATEEQ",
+                            Brand = "SHAMIRAA",
                             Date = reader["TransactionDateFormatted"].ToString(),
                             ItemCode = reader["Barcode"].ToString(),
                             Location = reader["Location"].ToString(),
